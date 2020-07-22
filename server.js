@@ -23,7 +23,7 @@ app.engine('hbs', handlebars({
 
 var tableData = [
 {
-    customerName: "Jorge",
+    customerName: "Alfredo",
     customerEmail: "jorge@email.com",
     customerID: "4474774",
     phoneNumber: "000-000-000"

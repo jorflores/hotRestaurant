@@ -7,7 +7,6 @@ const app = express();
 var PORT = process.env.PORT || 3000;
 
 //Middleware
-
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'))
@@ -80,17 +79,18 @@ app.get("/tables",function(req,res) {
     app.get("/tables",function(req,res) {
         //res.sendFile(path.join(__dirname, "public/tables.html"))
         //console.log(path.join(__dirname, "public/tables.html"))
-        res.render('tables',{layout:'index'});
+        res.render('tables',{layout:'index',tableData});
         });
     
 
     app.get("/reserve",function(req,res) {
-        res.sendFile(path.join(__dirname, "public/reserve.html"))
+        res.render('reserve',{layout:'index'});
     });
 
 // IF no route match
     app.get("*",function(req,res) {
-        res.sendFile(path.join(__dirname, "public/home.html"))
+        //res.sendFile(path.join(__dirname, "public/home.html"))
+        res.render('home',{layout:'index'});
     });
 
 

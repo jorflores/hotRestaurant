@@ -1,0 +1,26 @@
+{
+  "name": "hotRestaurant",
+  "version": "1.0.0",
+  "description": "Node-Express Exercise",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorflores/hotRestaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorflores/hotRestaurant/issues"
+  },
+  "homepage": "https://github.com/jorflores/hotRestaurant#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7"
+  }
+}
